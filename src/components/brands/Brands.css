@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.brands::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 400px) {
+
+  .search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+  }
+
+  .search > input {
+    width: 95%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgb(221, 220, 220);
+    padding: 0 0 0 10px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 200px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .logo > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .category {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 150px;
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    background-color: rgb(221, 220, 220);
+  }
+
+  .category > a,
+  .category > div {
+    width: 30%;
+    height: 40%;
+    border: 0.5px solid red;
+    text-decoration: none;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin: 0 0 100px 0;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 45%;
+    height: auto;
+    margin: 0 0 5px 0;
+    border-radius: 10px;
+    border: 0.5px solid rgb(160, 158, 158);
+  }
+
+  .product > img {
+    width: 100%;
+    height: 170px;
+    background-color: white;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 15px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .price {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .controller {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(221, 220, 220);
+    border-top: 1px solid black;
+  }
+
+  .controller > div, .controller > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    height: 100%;
+    font-size: 14px;
+  }
+  
+  .controller >  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .controller > a > .controlIcon {
+    width: 100%;
+    transform: rotateY(180deg);
+    color: black;
+  }
+
+  .controller > div:nth-of-type(3) > .controlIcon {
+    margin: 2px 0 0 0;
+  }
+
+  .controlIcon {
+    width: 100%;
+    height: 70%;
+  }
+
+  .savat {
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  .savatOn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 20px 20px 0 0;
+    background-color: rgb(207, 200, 200);
+    animation: savatOn 0.8s ease-in-out forwards;
+    overflow-y: scroll;
+  }
+
+  .onBuy {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 150px;
+    border-bottom: 1px solid black;
+    margin: 10px 0 0 0;
+  }
+
+  .onBuy:nth-last-child(-n + 2) {
+    margin-bottom: 50px;
+  }
+
+  .onBuy > img {
+    width: 30%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .onBuyDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 60%;
+  }
+
+  .onBuyDetails > * {
+    width: 100%;
+  }
+
+  .onBuyDetails > p:nth-of-type(2) {
+    height: 80px;
+    overflow: hidden;
+  }
+
+  .onBuyDetails > div {
+    display: flex;
+  }
+
+  .onBuyDetails > div > p {
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0 10px;
+  }
+
+  .onBuyDetails > div > .onBuyBtn {
+    width: 15%;
+    height: 25px;
+    border-radius: 10px;
+    margin: 0 1%;
+    font-size: 20px;
+    background-color: #fff;
+  }
+
+  .actionBtn {
+    width: 60%;
+    margin: 5px 0;
+  }
+
+  .decProduct,
+  .addProduct {
+    width: 40%;
+    height: 35px;
+    margin: 0 5px;
+    border-radius: 10px;
+    background-color: rgb(221, 220, 220);
+  }
+
+  .emptySavat {
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .sadEmoji {
+    width: 200px;
+    height: 200px;
+  }
+
+  .totalPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: rgb(221, 220, 220);
+  }
+
+  .totalQuantity {
+    text-align: center;
+    width: 25px;
+    position: absolute;
+    right: 4%;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+@keyframes savatOn {
+  from {
+    bottom: -50%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
