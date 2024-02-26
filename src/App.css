@@ -58,9 +58,10 @@
   }
 }
 
-@media (max-width: 399px) {
-  body{
-    display: none;
+@media (min-width: 300px) and (min-width: 399px){
+  .shopBrands > a {
+    width: 45%;
+    height: 150px;
   }
 }
 

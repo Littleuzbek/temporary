@@ -30,8 +30,9 @@ const SavatSlice = createSlice({
       }
     },
     removeItem(state, action) {
-      const productId = action.payload;
-
+      try{
+        const productId = action.payload;
+        
       const existingItem = state.items.find(item => item.id === productId)
 
       if (existingItem.quantity === 1) {
@@ -43,6 +44,7 @@ const SavatSlice = createSlice({
         state.totalPrice -= existingItem.price;
         state.totalQuantity--
       }
+    }catch(err){return}
     },
   },
 });

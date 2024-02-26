@@ -8,7 +8,6 @@ export default function Product(prop) {
   const dispatch = useDispatch();
 
   const AddProduct = () => {
-    console.log(details.id);
     dispatch(SavatActions.addItem(details));
   };
   

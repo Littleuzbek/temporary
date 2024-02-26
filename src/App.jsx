@@ -6,6 +6,7 @@ import {
 import Home from "./components/Home";
 import Brands, { BrandDataLoader } from "./components/brands/Brands";
 import Category, { CategoryDataLoader } from "./components/brands/Categrory";
+import NotFound from "./components/NotFound";
 
 function App() {
   const router = createBrowserRouter(
@@ -13,19 +14,29 @@ function App() {
       {
         path: "/",
         element: <Home />,
+        errorElement: <NotFound />
       },
       {
         path: ':id',
         element: <Brands />,
         loader: BrandDataLoader,
+        errorElement: <NotFound />,
         children: [
           {
             path: ':id',
             element: <Category />,
             loader: CategoryDataLoader,
+          },
+          {
+            path:  '*',
+            element: <NotFound />
           }
         ]
       },
+      {
+        path:  '*',
+        element: <NotFound />
+      }
     ]
   );
 

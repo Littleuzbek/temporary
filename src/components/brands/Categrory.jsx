@@ -5,7 +5,7 @@ import { useLoaderData } from "react-router-dom";
 
 export default function Category() {
   const categoryId = useLoaderData();
-  console.log('hello');
+
   return (
     <Fragment>
       <div className="products">

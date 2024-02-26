@@ -1,6 +1,6 @@
 import "./Brands.css";
 import Controller from "./Controller";
-import { Link, Outlet, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData, useNavigate } from "react-router-dom";
 import Logo from "./Logo";
 import { useState } from "react";
 import Savat from "./Savat";
@@ -10,12 +10,17 @@ import Product from "./Product";
 export default function Brands() {
   const brandId = useLoaderData();
   const [savat, setSavat] = useState(false);
-  const [casual,setCasual] = useState('casual');
+  const [casual, setCasual] = useState("casual");
+  const navigate = useNavigate()
 
-  const handleCasual = () =>{
-    setCasual('casual')
-    location.href = 'http://localhost:5173/korzinka'
-  }
+  const handleCasual = () => {
+    const location = window.location.pathname.split('/');
+    const backCasual = window.location.pathname.split('/').at(-2);
+    if(location.length === 3){
+      navigate(`/${backCasual}`)
+      setCasual('casual')
+    }
+  };
 
   return (
     <div className="brands">
@@ -27,22 +32,32 @@ export default function Brands() {
 
       <div className="category">
         <div onClick={handleCasual}>casual</div>
-        <Link onClick={()=>setCasual(false)} to="meat">meat</Link>
-        <Link onClick={()=>setCasual(false)} to="milky">milk</Link>
-        <Link onClick={()=>setCasual(false)} to="beverage">beverage</Link>
-        <Link onClick={()=>setCasual(false)} to="sweets">sweets</Link>
+        <Link onClick={() => setCasual(false)} to="meat">
+          meat
+        </Link>
+        <Link onClick={() => setCasual(false)} to="milky">
+          milk
+        </Link>
+        <Link onClick={() => setCasual(false)} to="beverage">
+          beverage
+        </Link>
+        <Link onClick={() => setCasual(false)} to="sweets">
+          sweets
+        </Link>
         <div>makeup</div>
       </div>
 
       <Outlet />
 
-      {casual && <div className="products">
-        {store.korzinka
-          .filter((a) => a.type === casual)
-          .map((details, index) => (
-            <Product details={details} key={index} />
-          ))}
-      </div>}
+      {casual && (
+        <div className="products">
+          {store.korzinka
+            .filter((a) => a.type === casual)
+            .map((details, index) => (
+              <Product details={details} key={index} />
+            ))}
+        </div>
+      )}
 
       <Controller onSavat={setSavat} />
       {savat && <Savat onSavat={setSavat} />}
