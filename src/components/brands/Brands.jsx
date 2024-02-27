@@ -25,26 +25,40 @@ export default function Brands() {
   return (
     <div className="brands">
       <div className="search">
-        <input type="text" name="" id="" placeholder="Mahsulotlar qidirish" />
+        <input type="text" name="" id="" placeholder="Mahsulot qidirish" />
       </div>
 
       <Logo id={brandId} />
 
       <div className="category">
-        <div onClick={handleCasual}>casual</div>
+        <div onClick={handleCasual}>
+        <img src="https://cdn-icons-png.flaticon.com/128/5278/5278722.png" alt="" />
+        <p>{`Top`}</p>
+        <p>{`10`}</p>
+        </div>
         <Link onClick={() => setCasual(false)} to="meat">
-          meat
+          <img src="https://cdn-icons-png.flaticon.com/128/3076/3076125.png" alt="" />
+          <p>{`Go'sht`}</p>
+          <p>{`mahsulolari`}</p>
         </Link>
         <Link onClick={() => setCasual(false)} to="milky">
-          milk
+        <img src="https://cdn-icons-png.flaticon.com/128/9954/9954768.png" alt="" />
+          <p>{`Sut`}</p>
+          <p>{`mahsulotlari`}</p>
         </Link>
         <Link onClick={() => setCasual(false)} to="beverage">
-          beverage
+        <img src="https://cdn-icons-png.flaticon.com/128/2722/2722527.png" alt="" />
+          <p>{`Ichimliklar`}</p>
         </Link>
         <Link onClick={() => setCasual(false)} to="sweets">
-          sweets
+        <img src="https://cdn-icons-png.flaticon.com/128/883/883431.png" alt="" />
+          <p>{`Shirinliklar`}</p>
         </Link>
-        <div>makeup</div>
+        <div>
+        <img src="https://cdn-icons-png.flaticon.com/128/3993/3993874.png" alt="" />
+          <p>{`Yuvinish`}</p>
+          <p>{`mahsulotlari`}</p>
+        </div>
       </div>
 
       <Outlet />

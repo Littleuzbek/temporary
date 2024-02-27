@@ -8,12 +8,12 @@ import { useEffect, useState } from "react";
 
 export default function Logo(prop) {
   const { id } = prop;
-  const lo = window.location.pathname;
+  const location = window.location.pathname;
   const [logo,setLogo] = useState('');
 
   useEffect(()=>{
-    setLogo(lo.split('/').at(-2))
-  },[lo,logo])
+    setLogo(location.split('/').at(-2))
+  },[location,logo])
 
   let img;
   if (id === "korzinka" || logo === "korzinka") {
@@ -32,7 +32,7 @@ export default function Logo(prop) {
 
   return (
     <div className="logo">
-      <img src={img} alt="" />
+      <img src={img} alt="" className={id === 'korzinka'? 'korzinka' : ''} />
     </div>
   );
 }

@@ -10,14 +10,14 @@ export default function Product(prop) {
   const AddProduct = () => {
     dispatch(SavatActions.addItem(details));
   };
-  
+
   const DecProduct = () => {
     dispatch(SavatActions.removeItem(details.id));
   };
-  
+
   return (
     <div className="product" key={details.id}>
-      <img src={details.img} alt={details.img} />
+      <img src={details.img} id="productImg" />
       <p className="description">{details.description}</p>
       <p className="price">{details.price}</p>
       <div className="actionBtn">
