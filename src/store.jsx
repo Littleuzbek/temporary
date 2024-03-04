@@ -34,126 +34,126 @@ export const store ={
 [
     {
         img: img1,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'NESCAFE GOLD',
         price: '28990',
         type: 'casual',
         id: 'pro1'
     },
     {
         img: img2,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Fin Масло сливочное ',
         price: '59990',
         type: 'casual',
         id: 'pro2'
     },
     {
         img: img3,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Смесь Nestogen 3 защита с 10м',
         price: '114990',
         type: 'casual',
         id: 'pro3'
     },
     {
         img: img4,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Rafaello chocolate 70g',
         price: '39990',
         type: 'casual',
         id: 'pro4'
     },
     {
         img: img5,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Lays 95g',
         price: '8990',
         type: 'casual',
         id: 'pro5'
     },
     {
         img: img6,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Huggies ultra comfort',
         price: '49990',
         type: 'casual',
         id: 'pro6'
     },
     {
         img: meat,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Rozmetov extra',
         price: '49990',
         type: 'meat',
         id: 'pro7'
     },
     {
         img: meat1,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Barra qo`y go`shti',
         price: '79990',
         type: 'meat',
         id: 'pro8'
     },
     {
         img: meat2,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Lahm mol go`shti',
         price: '89990',
         type: 'meat',
         id: 'pro9'
     },
     {
         img: meat3,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Asl baraka halol sosiskalari',
         price: '39990',
         type: 'meat',
         id: 'pro10'
     },
     {
         img: meat4,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Mol go`shti farsh',
         price: '69990',
         type: 'meat',
         id: 'pro11'
     },
     {
         img: meat5,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: '  Mol go`shti son qismi',
         price: '89990',
         type: 'meat',
         id: 'pro12'
     },
     {
         img: milky,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Nestle Nesquik  chocolate',
         price: '8990',
         type: 'milky',
         id: 'pro13'
     },
     {
         img: milky1,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Sir',
         price: '24990',
         type: 'milky',
         id: 'pro14'
     },
     {
         img: milky2,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Nestle fresh milk 1000ml',
         price: '14990',
         type: 'milky',
         id: 'pro15'
     },
     {
         img: milky3,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Nestle milk pak butter',
         price: '19990',
         type: 'milky',
         id: 'pro16'
     },
     {
         img: milky4,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Cokokrem ulker',
         price: '29990',
         type: 'milky',
         id: 'pro17'
     },
     {
         img: milky5,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Dromona Pure butter 100% natural',
         price: '14990',
         type: 'milky',
         id: 'pro18'
@@ -161,84 +161,84 @@ export const store ={
     
     {
         img: beverage,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Fanta 2L',
         price: '19999',
         type: 'beverage',
         id: 'pro19'
     },
     {
         img: beverage1,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Apple juice 1L',
         price: '7999',
         type: 'beverage',
         id: 'pro20'
     },
     {
         img: beverage2,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Coca cola klassik 2L',
         price: '19999',
         type: 'beverage',
         id: 'pro21'
     },
     {
         img: beverage3,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Sprite 1L',
         price: '9999',
         type: 'beverage',
         id: 'pro22'
     },
     {
         img: beverage4,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Mirinda orange 1.5L',
         price: '7999',
         type: 'beverage',
         id: 'pro23'
     },
     {
         img: beverage5,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Tropicana orange juice 1L',
         price: '14999',
         type: 'beverage',
         id: 'pr24'
     },
     {
         img: sweets,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Snickers 200g',
         price: '11999',
         type: 'sweets',
         id: 'pro25'
     },
     {
         img: sweets1,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Mars 100g',
         price: '7999',
         type: 'sweets',
         id: 'pro26'
     },
     {
         img: sweets2,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Bounty 150g',
         price: '9999',
         type: 'sweets',
         id: 'pro27'
     },
     {
         img: sweets3,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'm&m 80g',
         price: '5999',
         type: 'sweets',
         id: 'pro28'
     },
     {
         img: sweets4,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'MilkyWay 200g',
         price: '9999',
         type: 'sweets',
         id: 'pro29'
     },
     {
         img: sweets5,
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, vero.',
+        description: 'Strawberry ice cream 1kg',
         price: '39999',
         type: 'sweets',
         id: 'pro30'

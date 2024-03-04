@@ -6,6 +6,13 @@ import { useState } from "react";
 import Savat from "./Savat";
 import { store } from "../../store";
 import Product from "./Product";
+import meat from '../../imgs2/meatCat.png'
+import sut from '../../imgs2/12345.png'
+import sweet from '../../imgs2/sweet3.jpg'
+import ichimlik from '../../imgs2/1234.jpg'
+import selfCare from '../../imgs2/123.png'
+import top10 from '../../imgs2/123456.jpg'
+
 
 export default function Brands() {
   const brandId = useLoaderData();
@@ -32,30 +39,28 @@ export default function Brands() {
 
       <div className="category">
         <div onClick={handleCasual}>
-        <img src="https://cdn-icons-png.flaticon.com/128/5278/5278722.png" alt="" />
-        <p>{`Top`}</p>
-        <p>{`10`}</p>
+        <img src={top10} alt="" />
         </div>
         <Link onClick={() => setCasual(false)} to="meat">
-          <img src="https://cdn-icons-png.flaticon.com/128/3076/3076125.png" alt="" />
+          <img src={meat} alt="" />
           <p>{`Go'sht`}</p>
           <p>{`mahsulolari`}</p>
         </Link>
         <Link onClick={() => setCasual(false)} to="milky">
-        <img src="https://cdn-icons-png.flaticon.com/128/9954/9954768.png" alt="" />
+        <img src={sut} alt="" />
           <p>{`Sut`}</p>
           <p>{`mahsulotlari`}</p>
         </Link>
         <Link onClick={() => setCasual(false)} to="beverage">
-        <img src="https://cdn-icons-png.flaticon.com/128/2722/2722527.png" alt="" />
+        <img src={ichimlik} alt="" />
           <p>{`Ichimliklar`}</p>
         </Link>
         <Link onClick={() => setCasual(false)} to="sweets">
-        <img src="https://cdn-icons-png.flaticon.com/128/883/883431.png" alt="" />
+        <img src={sweet} alt="" />
           <p>{`Shirinliklar`}</p>
         </Link>
         <div>
-        <img src="https://cdn-icons-png.flaticon.com/128/3993/3993874.png" alt="" />
+        <img src={selfCare} alt="" />
           <p>{`Yuvinish`}</p>
           <p>{`mahsulotlari`}</p>
         </div>
